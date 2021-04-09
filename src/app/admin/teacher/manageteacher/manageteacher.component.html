@@ -1,0 +1,112 @@
+ <!-- Content Wrapper. Contains page content -->
+ <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Manage Teachers</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Teachers Table</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- left column -->
+          <div class="col-md-12">
+            <!-- general form elements -->
+            <div class="card card-dark">
+              <div class="card-header">
+                <h3 class="card-title">Details of teachers</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <table class="table">
+                  <tr>
+                      <th>id</th>
+                      <th>Name</th>
+                      <th>Email</th>
+                      <th>Contact</th>
+                      <th>Address</th>
+                      <th>Qualification</th>
+                      <th>Designation</th>
+                      <th>status</th>
+                      <th>edit</th>
+                      <th>delete</th>
+                  </tr>
+                  <tr>
+                      <td>1</td>
+                      <td>Damanpreet</td>
+                      <td>daman@gmail.com</td>
+                      <td>9876543210</td>
+                      <td>Jalandhar</td>
+                      <td></td>
+                      <td></td>
+                      <td><h3><span class="badge badge-primary font-weight-light">Active</span></h3></td>
+                      <td><a routerLink="/layout/editteacher"><button class="btn btn-success">Edit</button></a></td>
+                      <td><button class="btn btn-danger" (click)="ondelete()">Delete</button></td>
+                  </tr>
+                  
+                  
+                  <!-- <tr>
+                  <td><select>
+                    <option *ngFor="let data of students" value={{data.email}}>{{data.id}}</option>
+                  </select></td>
+                  <td><select>
+                    <option *ngFor="let data of students" [value]="data.email">{{data.name}}</option>
+                  </select></td>
+                  <td><select>
+                    <option *ngFor="let data of students" [value]="data.email">{{data.email}}</option>
+                  </select></td>
+                  </tr> -->
+                  <!-- <select>
+                    <option value="daman@o7services.com">daman</option>
+                  </select> -->
+                    
+                  <!-- <tr *ngFor="let data of students">
+                      <td>{{data.id}}</td>
+                      <td>{{data.name}}</td>
+                      <td>{{data.email}}</td>
+                  </tr> -->
+                <!-- <div class="card-body">
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Username</label>
+                        <input type="text" class="form-control"  placeholder="Username" > 
+                      </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control"  placeholder="Enter email" >
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" placeholder="Password">
+                  </div>
+                  
+                
+                </div> -->
+                <!-- /.card-body -->
+
+                <!-- <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div> -->
+            </table>
+            </div>
+            <!-- /.card -->
+          </div>
+          <!--/.col (left) -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->

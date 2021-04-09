@@ -12,6 +12,18 @@ import { FooterComponent } from './footer/footer.component';
 import { LayoutComponent } from './layout/layout.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { AddteacherComponent } from './admin/teacher/addteacher/addteacher.component';
+import { ManageteacherComponent } from './admin/teacher/manageteacher/manageteacher.component';
+import { AddstudentComponent } from './admin/student/addstudent/addstudent.component';
+import { ManagestudentComponent } from './admin/student/managestudent/managestudent.component';
+import { AddcourseComponent } from './admin/course/addcourse/addcourse.component';
+import { ManagecourseComponent } from './admin/course/managecourse/managecourse.component';
+import { AddsubjectComponent } from './admin/subject/addsubject/addsubject.component';
+import { ManagesubjectComponent } from './admin/subject/managesubject/managesubject.component';
+import { EditteacherComponent } from './admin/teacher/editteacher/editteacher.component';
+import { EditstudentComponent } from './admin/student/editstudent/editstudent.component';
+import { EditcourseComponent } from './admin/course/editcourse/editcourse.component';
+import { EditsubjectComponent } from './admin/subject/editsubject/editsubject.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +34,19 @@ import {HttpClientModule} from '@angular/common/http';
     LoginComponent,
     ErrorComponent,
     FooterComponent,
-    LayoutComponent
+    LayoutComponent,
+    AddteacherComponent,
+    ManageteacherComponent,
+    AddstudentComponent,
+    ManagestudentComponent,
+    AddcourseComponent,
+    ManagecourseComponent,
+    AddsubjectComponent,
+    ManagesubjectComponent,
+    EditteacherComponent,
+    EditstudentComponent,
+    EditcourseComponent,
+    EditsubjectComponent
     
   ],
   imports: [
