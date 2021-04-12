@@ -31,22 +31,23 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form>
+              <form [formGroup]="courseForm">
                 <div class="card-body">
                   <div class="row">
                     <div class="form-group col-sm-6">
-                        <label for="exampleInputPassword1">Course Name</label>
-                        <input type="text" class="form-control"  placeholder="Course Name" > 
+                        <label for="coursename">Course Name</label>
+                        <input type="text" class="form-control" formControlName="coursename" placeholder="Course Name" > 
+                        <div *ngIf="coursename.touched && coursename.invalid">
+                          <div *ngIf="coursename.errors.required" class="alert alert-danger">Please enter the name of Course</div>
+                        </div> 
                       </div>
                     <div class="form-group col-sm-6">
-                      <label for="exampleInputEmail1">Department</label>
+                      <label for="department">Department</label>
                       <select name="Department" class="form-control">
                         <option selected>CSE</option>
-                        <option>ECE</option>
+                        <option>ECE</option> 
                         <option>EE</option>
                         <option>CE</option>
-                        
-                     
                       </select>
                     </div>
                   </div>
@@ -55,7 +56,7 @@
                 <!-- /.card-body -->
 
                 <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="submit" class="btn btn-primary" (click)="submit()">Submit</button>
                 </div>
               </form>
             </div>

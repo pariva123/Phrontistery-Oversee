@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-editsubject',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditsubjectComponent implements OnInit {
 
-  constructor() { }
+  constructor(private toastr:ToastrService) { }
+
+  editsubjectForm = new FormGroup({
+    subjectname: new FormControl('',[Validators.required])
+  })
 
   ngOnInit(): void {
+  }
+
+  get subjectname(){
+    return this.editsubjectForm.get('subjectname')
+  }
+
+  submit(){
+    // alert('updated succesfully')
+    this.toastr.success('Success','Updated Succesfully')
   }
 
 }

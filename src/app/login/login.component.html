@@ -1,3 +1,11 @@
+<ngx-spinner
+  bdColor="rgba(51,51,51,0.8)"
+  size="medium"
+  color="#fff"
+  type="ball-scale-multiple"
+>
+  <p style="font-size: 20px; color: rgb(192, 112, 112)">Loading...</p>
+</ngx-spinner>
 <body class="login-page" style="min-height: 512.8px;">
     <div class="login-box">
       <div class="login-logo">
@@ -8,7 +16,7 @@
         <div class="card-body login-card-body">
           <p class="login-box-msg">Sign in to start your session</p>
          
-          <form [formGroup]="loginForm" (submit)="onclick()"  >
+          <form [formGroup]="loginForm" (submit)="onclick()">
             <div class="input-group mb-3">
               <input type="email" class="form-control" placeholder="Enter email" formControlName="username">
               <div class="input-group-append">

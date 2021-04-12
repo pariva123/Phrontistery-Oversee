@@ -1,8 +1,12 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ViewanswersheetsComponent } from './admin/answersheets/viewanswersheets/viewanswersheets.component';
+import { ViewassignmentComponent } from './admin/assignmnet/viewassignment/viewassignment.component';
+import { ViewattendanceComponent } from './admin/attendance/viewattendance/viewattendance.component';
 import { AddcourseComponent } from './admin/course/addcourse/addcourse.component';
 import { EditcourseComponent } from './admin/course/editcourse/editcourse.component';
 import { ManagecourseComponent } from './admin/course/managecourse/managecourse.component';
+import { ViewnotesComponent } from './admin/notes/viewnotes/viewnotes.component';
 import { AddstudentComponent } from './admin/student/addstudent/addstudent.component';
 import { EditstudentComponent } from './admin/student/editstudent/editstudent.component';
 import { ManagestudentComponent } from './admin/student/managestudent/managestudent.component';
@@ -36,7 +40,11 @@ const routes: Routes =  [
       {path:'editcourse', component:EditcourseComponent, canActivate:[AuthGuard]},
       {path:'addsubject', component:AddsubjectComponent, canActivate:[AuthGuard]},
       {path:'managesubject', component:ManagesubjectComponent, canActivate:[AuthGuard]},
-      {path:'editsubject', component:EditsubjectComponent, canActivate:[AuthGuard]}
+      {path:'editsubject', component:EditsubjectComponent, canActivate:[AuthGuard]},
+      {path:'viewattendance', component:ViewattendanceComponent, canActivate:[AuthGuard]},
+      {path:'viewassignment', component:ViewassignmentComponent, canActivate:[AuthGuard]},
+      {path:'viewnotes', component:ViewnotesComponent, canActivate:[AuthGuard]},
+      {path:'viewanswersheets', component:ViewanswersheetsComponent, canActivate:[AuthGuard]}
     ]
   },
   {path:'**', component:ErrorComponent}

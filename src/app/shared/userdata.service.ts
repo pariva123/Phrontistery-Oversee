@@ -6,8 +6,9 @@ import { Injectable } from '@angular/core';
 export class UserdataService {
 
   constructor() { }
-  public setData(userdata:any){
-    sessionStorage.setItem('username','userdata')
+  
+  public setData(userdata){
+    sessionStorage.setItem('username',userdata)
   }
 
   public getData(){

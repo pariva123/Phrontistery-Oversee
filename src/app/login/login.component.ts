@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
+import { NgxSpinnerService } from 'ngx-spinner';
 import { UserdataService } from '../shared/userdata.service';
+
+
 
 @Component({
   selector: 'app-login',
@@ -10,7 +13,8 @@ import { UserdataService } from '../shared/userdata.service';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private userdata:UserdataService, private router:Router) { }
+  constructor(private userdata:UserdataService, private router:Router, private spinner:NgxSpinnerService)
+   { }
   loginForm= new FormGroup({
     'username' : new FormControl(''),
     'password' : new FormControl('')
@@ -23,6 +27,7 @@ export class LoginComponent implements OnInit {
   }
 
   onclick(){
+    this.spinner.show()
       // this.userauth.login(this.loginForm.value).subscribe(
       //   (res:any)=>{
       //     console.log(res)
@@ -32,14 +37,19 @@ export class LoginComponent implements OnInit {
       //   }
       // )
 
-    if (this.loginForm.get('username')?.value == "parivadhir@gmail.com" && this.loginForm.get('password')?.value == "pariva" )
+  
+    if (this.loginForm.get('username').value == "parivadhir@gmail.com" && this.loginForm.get('password').value == "pariva" )
     {
+      this.spinner.hide()
       this.userdata.setData(this.loginForm.value)
       this.router.navigateByUrl('layout/dashboard')
     }
     else{
+      this.spinner.hide()
       alert('incorrect or invalid username and password')
     }
   }
 
+
+  
 }

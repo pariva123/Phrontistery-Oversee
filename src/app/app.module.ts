@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopbarComponent } from './topbar/topbar.component';
@@ -24,6 +25,14 @@ import { EditteacherComponent } from './admin/teacher/editteacher/editteacher.co
 import { EditstudentComponent } from './admin/student/editstudent/editstudent.component';
 import { EditcourseComponent } from './admin/course/editcourse/editcourse.component';
 import { EditsubjectComponent } from './admin/subject/editsubject/editsubject.component';
+import { NgxSpinnerModule } from "ngx-spinner";
+import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
+import { ViewattendanceComponent } from './admin/attendance/viewattendance/viewattendance.component';
+import { ViewassignmentComponent } from './admin/assignmnet/viewassignment/viewassignment.component';
+import { ViewnotesComponent } from './admin/notes/viewnotes/viewnotes.component';
+import { ViewanswersheetsComponent } from './admin/answersheets/viewanswersheets/viewanswersheets.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +55,11 @@ import { EditsubjectComponent } from './admin/subject/editsubject/editsubject.co
     EditteacherComponent,
     EditstudentComponent,
     EditcourseComponent,
-    EditsubjectComponent
+    EditsubjectComponent,
+    ViewattendanceComponent,
+    ViewassignmentComponent,
+    ViewnotesComponent,
+    ViewanswersheetsComponent
     
   ],
   imports: [
@@ -54,7 +67,12 @@ import { EditsubjectComponent } from './admin/subject/editsubject/editsubject.co
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxSpinnerModule,
+    CommonModule,
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot(), // ToastrModule added
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

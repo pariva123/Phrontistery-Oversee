@@ -9,6 +9,9 @@ import { UserdataService } from "../shared/userdata.service";
 )
 
 export class AuthGuard implements CanActivate{
+    login(value: any) {
+      throw new Error('Method not implemented.');
+    }
     constructor(private userdata:UserdataService, private router:Router){}
 
     canActivate(): boolean{
