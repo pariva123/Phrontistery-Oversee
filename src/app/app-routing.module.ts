@@ -14,6 +14,7 @@ import { AddsubjectComponent } from './admin/subject/addsubject/addsubject.compo
 import { EditsubjectComponent } from './admin/subject/editsubject/editsubject.component';
 import { ManagesubjectComponent } from './admin/subject/managesubject/managesubject.component';
 import { AddteacherComponent } from './admin/teacher/addteacher/addteacher.component';
+import { AlotteacherComponent } from './admin/teacher/alotteacher/alotteacher.component';
 import { EditteacherComponent } from './admin/teacher/editteacher/editteacher.component';
 import { ManageteacherComponent } from './admin/teacher/manageteacher/manageteacher.component';
 import { AuthGuard } from './auth/auth.guard';
@@ -32,6 +33,7 @@ const routes: Routes =  [
       {path:'addteacher', component:AddteacherComponent, canActivate:[AuthGuard]},
       {path:'manageteacher', component:ManageteacherComponent, canActivate:[AuthGuard]},
       {path:'editteacher', component:EditteacherComponent, canActivate:[AuthGuard]},
+      {path:'alotteacher', component:AlotteacherComponent, canActivate:[AuthGuard]},
       {path:'addstudent', component:AddstudentComponent, canActivate:[AuthGuard]},
       {path:'managestudent', component:ManagestudentComponent, canActivate:[AuthGuard]},
       {path:'editstudent', component:EditstudentComponent, canActivate:[AuthGuard]},
@@ -44,7 +46,7 @@ const routes: Routes =  [
       {path:'viewattendance', component:ViewattendanceComponent, canActivate:[AuthGuard]},
       {path:'viewassignment', component:ViewassignmentComponent, canActivate:[AuthGuard]},
       {path:'viewnotes', component:ViewnotesComponent, canActivate:[AuthGuard]},
-      {path:'viewanswersheets', component:ViewanswersheetsComponent, canActivate:[AuthGuard]}
+      {path:'viewanswersheets', component:ViewanswersheetsComponent, canActivate:[AuthGuard]},
     ]
   },
   {path:'**', component:ErrorComponent}

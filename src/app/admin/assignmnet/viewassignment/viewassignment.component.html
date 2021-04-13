@@ -34,7 +34,16 @@
               <form>
                 <div class="card-body">
                   <div class="row">
-                    <div class="form-group col-sm-6">
+                    <div class="form-group col-sm-4">
+                      <label for="subjectname">Course</label>
+                      <select name="Subject" class="form-control">
+                          <option selected>B.Tech</option>
+                          <!-- <option>BE</option> 
+                          <option>B.sc</option>
+                          <option>CC</option> -->
+                        </select>
+                  </div>
+                    <div class="form-group col-sm-4">
                         <label for="subjectname">Subject</label>
                         <select name="Subject" class="form-control">
                             <option selected>OOAD</option>
@@ -42,43 +51,21 @@
                             <option>TOC</option>
                             <option>CC</option>
                           </select>
-                    </div>
-                    <div class="form-group col-sm-6">
-                        <label for="subjectname">Course</label>
-                        <select name="Subject" class="form-control">
-                            <option selected>B.Tech</option>
-                            <!-- <option>BE</option> 
-                            <option>B.sc</option>
-                            <option>CC</option> -->
-                          </select>
-                    </div>
-                    <div class="form-group col-sm-6">
-                        <label for="department">Department</label>
-                        <select name="Department" class="form-control">
-                          <option selected>CSE</option>
-                          <option>ECE</option> 
-                          <option>EE</option>
-                          <option>CE</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-sm-6">
+                        </div>
+                    <div class="form-group col-sm-4">
                         <label for="department">Name of Assignment</label>
-                        <input type="text" placeholder="Name of Assigenment" class="form-control">
+                        <input type="text" placeholder="Name of Assignment" class="form-control">
                     </div>
                   </div>
                 </div>
                 <!-- /.card-body -->
-
-                <div class="card-footer">
-                  <button type="submit" class="btn btn-primary" >Submit</button>
-                </div>
               </form>
               <table class="table" >
                 <tr>
                     <th>id</th>
+                    <th>Teacher Name </th>
                     <th>Cousre Name</th>
                     <th>Subject</th>
-                    <th>Roll No</th>
                     <th>Name of Assignment</th>
                     <th>Description</th>
                     <th>Document</th>
@@ -87,8 +74,8 @@
                 </tr>
                 <tr>
                     <td>1</td>
-                    <td>B.Tech</td>
-                    <td>TOC</td>  
+                    <td></td>
+                    <td></td>  
                     <td></td>
                     <td></td>
                     <td></td>  

@@ -33,6 +33,7 @@ import { ViewattendanceComponent } from './admin/attendance/viewattendance/viewa
 import { ViewassignmentComponent } from './admin/assignmnet/viewassignment/viewassignment.component';
 import { ViewnotesComponent } from './admin/notes/viewnotes/viewnotes.component';
 import { ViewanswersheetsComponent } from './admin/answersheets/viewanswersheets/viewanswersheets.component';
+import { AlotteacherComponent } from './admin/teacher/alotteacher/alotteacher.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { ViewanswersheetsComponent } from './admin/answersheets/viewanswersheets
     ViewattendanceComponent,
     ViewassignmentComponent,
     ViewnotesComponent,
-    ViewanswersheetsComponent
+    ViewanswersheetsComponent,
+    AlotteacherComponent
     
   ],
   imports: [
