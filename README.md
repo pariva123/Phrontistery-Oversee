@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # AngularFinalTemplate
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2.
@@ -71,4 +71,4 @@ This project is licensed under the [MIT License](LICENSE).
 ## Contact
 
 For any inquiries or support, please contact pl95534n@pace.edu.
->>>>>>> 7236bbe9722a86f9da872126a20c63f3a4a78788
+
