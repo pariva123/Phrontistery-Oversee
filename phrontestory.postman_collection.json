@@ -1,0 +1,1598 @@
+{
+	"info": {
+		"_postman_id": "b2f2aeba-5300-41a6-b39e-6f5eb6a57481",
+		"name": "phrontestory",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "1. Register",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Admin",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "admn@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "contact",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "user_type",
+											"value": "admin",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/register",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2. Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "admn@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/login",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3. Logout",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/admin/logout",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "1. Courses",
+					"item": [
+						{
+							"name": "1. add course",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "course_name",
+											"value": "M-Tech extra",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/addCourse",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"addCourse"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2. get course",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/admin/getCourse",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"getCourse"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3. Get Course By Id",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "60937f9e9311cf133c2cc735",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/getCourseById",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"getCourseById"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4. Update COurse",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "60937f9e9311cf133c2cc735",
+											"type": "text"
+										},
+										{
+											"key": "course_name",
+											"value": "B-Tech",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/updateCourse",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"updateCourse"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "5. Delete course",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "609381f9e534bc2a6866711e",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/deleteCourse",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"deleteCourse"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "2. Subjects",
+					"item": [
+						{
+							"name": "1. add subject",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "course_id",
+											"value": "60937f9e9311cf133c2cc735",
+											"type": "text"
+										},
+										{
+											"key": "subject_name",
+											"value": "Computer Graphics",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/addSubject",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"addSubject"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2. Get Subject",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/admin/getSubject",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"getSubject"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3. get subject by id",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "609388fa19adba18cc3f2901",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/getSubjectById",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"getSubjectById"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4. Update Subject",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "609388fa19adba18cc3f2901",
+											"type": "text"
+										},
+										{
+											"key": "course_id",
+											"value": "60937fa99311cf133c2cc736",
+											"type": "text"
+										},
+										{
+											"key": "subject_name",
+											"value": "Extra Demo",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/updateSubject",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"updateSubject"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "5. Delete subject",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "60938cde09902a1e84e54b14",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/deleteSubject",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"deleteSubject"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "3. Teacher",
+					"item": [
+						{
+							"name": "1. add teacher step-1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Daman",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "daman@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "contact",
+											"value": "9638527410",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "Demo Address",
+											"type": "text"
+										},
+										{
+											"key": "user_type",
+											"value": "teacher",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/register",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2. add teacher step-2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "user_id",
+											"value": "6093917f4804e53ab026d7bc",
+											"type": "text"
+										},
+										{
+											"key": "teacher_name",
+											"value": "daman",
+											"type": "text"
+										},
+										{
+											"key": "qualification",
+											"value": "Btech",
+											"type": "text"
+										},
+										{
+											"key": "designation",
+											"value": "developer",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/addTeacher",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"addTeacher"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3. Get Teacher",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/admin/getTeacher",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"getTeacher"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4. Get Teacher By Id",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "609392593e297b32647fdbac",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/getTeacherById",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"getTeacherById"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "5. Delete Teacher",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "609392593e297b32647fdbac",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/deleteTeacher",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"deleteTeacher"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "4. Student",
+					"item": [
+						{
+							"name": "1. add student step-1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Damanpreet",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "damanpreet@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "contact",
+											"value": "9638527412",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "Demo Student Address",
+											"type": "text"
+										},
+										{
+											"key": "user_type",
+											"value": "student",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/register",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2. add student step-2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "user_id",
+											"value": "60939d5f6ccae1141097dea9",
+											"type": "text"
+										},
+										{
+											"key": "course_id",
+											"value": "60937f9e9311cf133c2cc735",
+											"type": "text"
+										},
+										{
+											"key": "student_name",
+											"value": "damanpreet",
+											"type": "text"
+										},
+										{
+											"key": "rollno",
+											"value": "101",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/addStudent",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"addStudent"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3. Get Student",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/admin/getStudent",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"getStudent"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4. Get Student By Id",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "6093cf69b06f4b239c52360b",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/getStudentById",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"getStudentById"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "5. Alot Teacher",
+					"item": [
+						{
+							"name": "1. Alot Teacher",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "course_id",
+											"value": "60937fa99311cf133c2cc736",
+											"type": "text"
+										},
+										{
+											"key": "subject_id",
+											"value": "609388fa19adba18cc3f2901",
+											"type": "text"
+										},
+										{
+											"key": "teacher_user_id",
+											"value": "6093917f4804e53ab026d7bc",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/alotTeacher",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"alotTeacher"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2. get Alotted Teacher",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/admin/getAlottedTeacher",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"getAlottedTeacher"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3. delete alotted",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "6093d485e5059d3178cb24d2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/deletealotted",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"deletealotted"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "6. Assignment",
+					"item": [
+						{
+							"name": "1. get Assignment",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/admin/getAssignment",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"getAssignment"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "7. Notes",
+					"item": [
+						{
+							"name": "1. get Notes",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/admin/getNotes",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"getNotes"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Teacher",
+			"item": [
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "1. Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "daman@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/teacher/login",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"teacher",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2. Logout",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/teacher/logout",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"teacher",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "2. Course",
+					"item": [
+						{
+							"name": "1. get course",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/teacher/getCourse",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"teacher",
+										"getCourse"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "3. Subject",
+					"item": [
+						{
+							"name": "1. Get Subject",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/teacher/getSubject",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"teacher",
+										"getSubject"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "4. Timetable",
+					"item": [
+						{
+							"name": "1. Add Timetable",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "timetable_name",
+											"type": "file",
+											"src": "/D:/o7_office_material/github-projects/kamalelctronics/database/public/customer_profile/273660003.jpg"
+										},
+										{
+											"key": "user_id",
+											"value": "6093d871d679c01e10d5dcab",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/teacher/addTimetable",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"teacher",
+										"addTimetable"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2. get timetable",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/teacher/getTimetable",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"teacher",
+										"getTimetable"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "5. Assignment",
+					"item": [
+						{
+							"name": "1. Add assignment",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "course_id",
+											"value": "60937fa99311cf133c2cc736",
+											"type": "text"
+										},
+										{
+											"key": "subject_id",
+											"value": "609388fa19adba18cc3f2901",
+											"type": "text"
+										},
+										{
+											"key": "name_of_assignment",
+											"value": "Testing Assignment",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "This is for testing purpose only",
+											"type": "text"
+										},
+										{
+											"key": "document",
+											"type": "file",
+											"src": "/D:/o7_office_material/github-projects/kamalelctronics/database/public/customer_profile/413805207.jpg"
+										},
+										{
+											"key": "total_marks",
+											"value": "10",
+											"type": "text"
+										},
+										{
+											"key": "work_type",
+											"value": "assignment",
+											"description": "//assignment,task,test",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/teacher/addAssignment",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"teacher",
+										"addAssignment"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2. get Assignment",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/teacher/getAssignment",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"teacher",
+										"getAssignment"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3. delete assignment",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "6094db5041a553230466f170",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/teacher/deleteAssignment",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"teacher",
+										"deleteAssignment"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4. Answer Assignment",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "assignment_id",
+											"value": "609524254a82ce039cc27d5f",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/teacher/getAssignmentAnswer",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"teacher",
+										"getAssignmentAnswer"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "5. Assign Marks",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "609619de4bde062a688ed139",
+											"type": "text"
+										},
+										{
+											"key": "obtained_marks",
+											"value": "9",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/teacher/assignMarks",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"teacher",
+										"assignMarks"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "6. Notes",
+					"item": [
+						{
+							"name": "1. Add Notes",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "course_id",
+											"value": "60937fa99311cf133c2cc736",
+											"type": "text"
+										},
+										{
+											"key": "subject_id",
+											"value": "609388fa19adba18cc3f2901",
+											"type": "text"
+										},
+										{
+											"key": "note_name",
+											"value": "Testing Notes",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "THis is for testing purpose",
+											"type": "text"
+										},
+										{
+											"key": "document",
+											"type": "file",
+											"src": "/D:/o7_office_material/github-projects/kamalelctronics/database/public/customer_profile/273660003.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/teacher/addNotes",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"teacher",
+										"addNotes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2. get Notes",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/teacher/getNotes",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"teacher",
+										"getNotes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3. delete notes",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "_id",
+											"value": "6094e7296e7aa7211878c643",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/teacher/deleteNotes",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"teacher",
+										"deleteNotes"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "7. Attendance",
+					"item": [
+						{
+							"name": "1. get Student By Course",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "course_id",
+											"value": "60937f9e9311cf133c2cc735",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/teacher/getStudentByCourse",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"teacher",
+										"getStudentByCourse"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "student",
+			"item": [
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "1. Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "damanpreet@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/student/login",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"student",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2. Logout",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/student/logout",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"student",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "2. Subject",
+					"item": [
+						{
+							"name": "1. Get Subject",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "course_id",
+											"value": "60937fa99311cf133c2cc736",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/student/getSubject",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"student",
+										"getSubject"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "3. Time table",
+					"item": [
+						{
+							"name": "1. get timetable",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/student/getTimetable",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"student",
+										"getTimetable"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "4. Assignment",
+					"item": [
+						{
+							"name": "1. get Assignment",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "subject_id",
+											"value": "609388fa19adba18cc3f2901",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/student/getAssignment",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"student",
+										"getAssignment"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2. Answer Assignment",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "assignment_id",
+											"value": "609524254a82ce039cc27d5f",
+											"type": "text"
+										},
+										{
+											"key": "student_user_id",
+											"value": "60939d5f6ccae1141097dea9",
+											"type": "text"
+										},
+										{
+											"key": "answer_sheet",
+											"type": "file",
+											"src": "/D:/o7_office_material/github-projects/kamalelctronics/database/public/customer_profile/273660003.jpg"
+										},
+										{
+											"key": "total_marks",
+											"value": "10",
+											"type": "text"
+										},
+										{
+											"key": "obtained_marks",
+											"value": "-",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/student/answerAssignment",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"student",
+										"answerAssignment"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3.Get Answer Assignment",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "assignment_id",
+											"value": "609524254a82ce039cc27d5f",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/student/getAssignmentAnswer",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"student",
+										"getAssignmentAnswer"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "5. Notes",
+					"item": [
+						{
+							"name": "1. get Notes",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "subject_id",
+											"value": "609388fa19adba18cc3f2901",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/student/getNotes",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"student",
+										"getNotes"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
