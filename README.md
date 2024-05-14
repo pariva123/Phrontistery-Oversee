@@ -1,6 +1,30 @@
 # Phrontistery Oversee
 
 Phrontistery Oversee is a student management system designed to streamline administrative tasks related to managing students, courses, grades, and more.
+## Snapshots
+![Admin Login Screenshot](https://github.com/pariva123/Phrontistery-Oversee/blob/1140e33bed3efb75bc00f49e3b0203ac336466f1/Admin%20Login.png "Admin Panel")
+
+![Admin Dashboard Screenshot](https://github.com/pariva123/Phrontistery-Oversee/blob/1140e33bed3efb75bc00f49e3b0203ac336466f1/Admin%20Panel.png "Admin Dashboard")
+
+![Alloted Teachers Screenshot](https://github.com/pariva123/Phrontistery-Oversee/blob/1140e33bed3efb75bc00f49e3b0203ac336466f1/Allot%20Teachers.png "Alloted Teachers")
+
+![Notes](https://github.com/pariva123/Phrontistery-Oversee/blob/1140e33bed3efb75bc00f49e3b0203ac336466f1/Notes.png "Notes")
+
+![Teacher Login](https://github.com/pariva123/Phrontistery-Oversee/blob/1140e33bed3efb75bc00f49e3b0203ac336466f1/Teacher%20Login.png "Teacher Login")
+
+![Teacher Dashboard](https://github.com/pariva123/Phrontistery-Oversee/blob/1140e33bed3efb75bc00f49e3b0203ac336466f1/Teacher%20Dashboard.png "Teacher Dashboard")
+
+![View Attendance](https://github.com/pariva123/Phrontistery-Oversee/blob/1140e33bed3efb75bc00f49e3b0203ac336466f1/Attendance.png "View Attendance")
+
+![Attendance Loaded](https://github.com/pariva123/Phrontistery-Oversee/blob/1140e33bed3efb75bc00f49e3b0203ac336466f1/Attendance%20Loaded.png "Attendance Loaded")
+
+![Manage Assignments](https://github.com/pariva123/Phrontistery-Oversee/blob/1140e33bed3efb75bc00f49e3b0203ac336466f1/Manage%20Assignments.png "Manage Assignments")
+
+![Timetable](https://github.com/pariva123/Phrontistery-Oversee/blob/1140e33bed3efb75bc00f49e3b0203ac336466f1/Timetable.png "Timetable")
+
+![Student Login](https://github.com/pariva123/Phrontistery-Oversee/blob/1140e33bed3efb75bc00f49e3b0203ac336466f1/Student%20Login.png "Student Login")
+
+![Student Dashboard](https://github.com/pariva123/Phrontistery-Oversee/blob/1140e33bed3efb75bc00f49e3b0203ac336466f1/Student%20Dashboard.png "Student Dashboard")
 
 ## Features
 
@@ -42,6 +66,9 @@ This project is licensed under the [MIT License](LICENSE).
 ## Contact
 
 For any inquiries or support, please contact pl95534n@pace.edu.# AngularStore
+
+
+## Phrontistery Oversee More Details
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4.
 
