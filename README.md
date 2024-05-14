@@ -27,6 +27,13 @@ We have 3 modules(Student, Teacher and User)
 
 -MEAN STACK [ Mongo DB, EXpress Server, Anngular and Node Js]
 
+## Snapshots
+![Admin Panel Screenshot](https://raw.githubusercontent.com/pariva123/Phrontistery%20Oversee/Presentation%20Including%20Snapshots/Admin%20Panel.png "Admin Panel")
+
+
+
+
+
 ## Contributing
 
 Contributions are welcome! If you have any ideas for improvements or new features, feel free to open an issue or submit a pull request.
