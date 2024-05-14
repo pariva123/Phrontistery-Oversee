@@ -65,10 +65,10 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For any inquiries or support, please contact pl95534n@pace.edu.# AngularStore
+For any inquiries or support, please contact pl95534n@pace.edu.
 
 
-## Phrontistery Oversee More Details
+## Phrontistery Oversee More Details(Angular Store)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4.
 
