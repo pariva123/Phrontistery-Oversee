@@ -61,7 +61,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgements
 
-- Special thanks to **Malaika Sharma** who worked along with me as a perfect Team Partner.
+- Special thanks to **Malaika Sharma**(https://github.com/Malaika-Sharma) and **Garima Sharme** (https://github.com/garimasharma2y) who worked along with me as a perfect Team Partner's.
 
 ## Contact
 
