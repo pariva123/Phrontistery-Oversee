@@ -28,7 +28,7 @@ Phrontistery Oversee is a student management system designed to streamline admin
 
 ## Features
 
-We have 3 modules(Admin, Teacher and Student)
+We have 3 modules(Admin, Teacher and Student).
 
 - **Student Management:** Add, edit, and delete student records.
 - **Course Management:** Manage courses, including adding new courses and assigning students to courses.
